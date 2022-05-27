@@ -1,0 +1,16 @@
+.single {
+  padding: 2px 16px;
+  display: block;
+  margin: 20px 10px;
+}
+.single:hover {
+  border-left: 8px solid #37c9b5;
+  background: rgb(241, 241, 241);
+}
+
+.image {
+  padding: 2px 16px;
+  display: block;
+  margin: 20px 10px;
+  /* border-left: 8px solid ; */
+}

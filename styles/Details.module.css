@@ -1,0 +1,60 @@
+
+  .profile_card_container {
+    /* fix the max-width because background image is not design to be repeat */
+    max-width: 35rem;
+    /* horizontal centering */
+    margin-left: auto;
+    margin-right: auto;
+  
+    border-radius: 1rem;
+    /* hide what's coming out of the container (profile_image_container background) */
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .profile_image_container {
+    --background-height: 14rem;
+    --image-height: 17rem;
+    --image-width: 17rem;
+    --image-border-size: .5rem;
+    height: calc(var(--background-height) + (var(--image-height) / 2) + (var(--image-border-size)));
+  
+    background-image: url("/frontendmentor/challenge/profile-card-component/bg-pattern-card.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    /* push the content to the bottom of the div */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .profile_image_container > div {
+    width: calc(var(--image-width) + var(--image-border-size) * 2);
+    height:  calc(var(--image-height) + var(--image-border-size) * 2);
+    border: var(--image-border-size) solid white;
+    border-radius: calc(var(--image-width) / 2 + var(--image-border-size));
+    /* hide what is coming out of the div (image) */
+    overflow: hidden;
+    /* center horizontally */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .profile_description {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    /* make divider with border bottom */
+    border-bottom: .1rem solid hsl(0, 0%, 90%);
+    text-align: center;
+  }
+  
+  
+  .profile_stats {
+    padding-top: 2.6rem;
+    padding-bottom: 2.4rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
