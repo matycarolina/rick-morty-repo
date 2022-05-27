@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['res.cloudinary.com', 'rickandmortyapi.com'],
   },
+  typescript: {
+    ignoreBuildErrors: true
+}
 }
 
 module.exports = nextConfig;
